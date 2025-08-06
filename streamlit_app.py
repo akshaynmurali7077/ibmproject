@@ -7,7 +7,7 @@ model = joblib.load("malnutrition_model.pkl")
 
 # Streamlit UI
 st.set_page_config(page_title="Child Malnutrition Predictor", page_icon="🧠")
-st.title("🧠 Child Malnutrition Risk Predictor")
+st.title("Child Malnutrition Risk Predictor")
 st.write("Enter the details below to predict if the child is at risk of malnutrition.")
 
 # Input fields
