@@ -12,8 +12,8 @@ st.write("Enter the details below to predict if the child is at risk of malnutri
 
 # Input fields
 age = st.number_input("Child's Age (months)", min_value=0, max_value=60, value=24)
-weight = st.number_input("Weight (kg)", min_value=1.0, max_value=30.0, value=10.0, step=0.1)
-height = st.number_input("Height (cm)", min_value=30.0, max_value=120.0, value=80.0, step=0.1)
+weight = st.number_input("Weight (kg)", min_value=1.0, max_value=90.0, value=10.0, step=0.1)
+height = st.number_input("Height (cm)", min_value=30.0, max_value=190.0, value=80.0, step=0.1)
 income = st.number_input("Monthly Household Income (₹)", min_value=1000, max_value=50000, value=10000, step=500)
 
 # Predict button
@@ -26,3 +26,4 @@ if st.button("🔍 Predict"):
         st.error("🔴 The child is likely **MALNOURISHED**.")
     else:
         st.success("🟢 The child is likely **HEALTHY**.")
+
